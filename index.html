@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+    <style>
+      .card-text {
+        font-size: smaller;
+        column-gap: gray;
+        text-align: justify;
+      }
+      .card {
+        width: 300px;
+        height: 380px;
+      }
+      #heros-section {
+        background-image: url("./images/d-heros.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section en-tête -->
+    <header>
+      <ul
+        class="d-flex align-items-center list-unstyled gap-4 p-3 mb-2 bg-success text-white fixed-top z-100 opacity-75"
+      >
+        <li class="flex-grow-1"><strong>Nom du restaurant</strong></li>
+        <li>
+          <a href="#" class="text-decoration-none text-white fw-bold"
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-white fw-bold">Menu</a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-white fw-bold"
+            >A propos de nous</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-white fw-bold"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </header>
+    <!-- Section Héros -->
+    <div id="heros-section" class="position-relative min-vh-100 w-100">
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center"
+      >
+        <h1>Bienvenu(e) chez papi cuisine</h1>
+        <button class="btn btn-outline-success">Commandez</button>
+      </div>
+    </div>
+    <!-- Section Menu -->
+    <div class="container px-8">
+      <div class="row">
+        <div class="col-3 mt-4">
+          <div class="card">
+            <img
+              src="./images/Bobotie.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300px; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bobotie</h5>
+              <p class="card-text">
+                Un plat sud-africain à base de viande hachée épicée, de fruits
+                secs et d'une garniture d'œufs.
+              </p>
+              <strong href="#" class="text-danger fw-bolder"
+                >Prix : 12 €</strong
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 mt-4 h-">
+          <div class="card">
+            <img
+              src="./images/Bunny Chow.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300p x; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bunny Chow</h5>
+              <p class="card-text">
+                Un plat sud-africain composé d'un pain évidé rempli de curry
+                épicé.
+              </p>
+              <strong href="#" class="text-danger fw-bolder">Prix : 7 €</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 mt-4 h-">
+          <div class="card">
+            <img
+              src="./images/Egusi Soup.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300px; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Egusi Soup</h5>
+              <p class="card-text">
+                Une soupe nigériane à base de graines de melon, d'épinards, de
+                viande ou de poisson, souvent servie avec du Fufu.
+              </p>
+              <strong href="#" class="text-danger fw-bolder"
+                >Prix : 10 €</strong
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 mt-4 h-">
+          <div class="card">
+            <img
+              src="./images/Fufu.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300px; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fufu</h5>
+              <p class="card-text">
+                Le Fufu est une pâte épaisse faite à partir de manioc, d'igname
+                ou de plantain, souvent servie avec des soupes ou des ragoûts.
+              </p>
+              <strong href="#" class="text-danger fw-bolder">Prix : 8 €</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 mt-4 h-">
+          <div class="card">
+            <img
+              src="./images/Injera.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300p x; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Injera</h5>
+              <p class="card-text">
+                Une galette éthiopienne à base de teff, souvent servie avec
+                divers ragoûts et légumes.
+              </p>
+              <strong href="#" class="text-danger fw-bolder">Prix : 5 €</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 mt-4 h-">
+          <div class="card">
+            <img
+              src="./images/Jollof Rice.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300px; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jollof Rice</h5>
+              <p class="card-text">
+                Un plat ouest-africain de riz cuit dans une sauce tomate épicée
+                avec des légumes, souvent accompagné de viande ou de poisson.
+              </p>
+              <strong href="#" class="text-danger fw-bolder"
+                >Prix : 10 €</strong
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 mt-4 h-">
+          <div class="card">
+            <img
+              src="./images/Poulet Yassa.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300p x; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Poulet Yassa</h5>
+              <p class="card-text">
+                Un plat sénégalais de poulet mariné au citron, aux oignons et
+                aux épices, puis grillé et mijoté.
+              </p>
+              <strong href="#" class="text-danger fw-bolder"
+                >Prix : 12 €</strong
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 mt-4 h-">
+          <div class="card">
+            <img
+              src="./images/Tagine.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-width: 300p x; max-height: 200px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tagine</h5>
+              <p class="card-text">
+                Un ragoût marocain de viande, légumes et épices, cuit lentement
+                dans un plat en terre cuite.
+              </p>
+              <strong href="#" class="text-danger fw-bolder"
+                >Prix : 15 €</strong
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
