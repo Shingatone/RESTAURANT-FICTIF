@@ -9,18 +9,22 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <style>
       .card-text {
-        font-size: 10px;
+        font-size: 13px;
         color: gray;
         text-align: justify;
         line-height: 1.3;
       }
       .card {
         max-width: 300px;
-        height: 300px;
       }
       #heros-section {
         background-image: url("./images/d-heros.jpg");
@@ -36,6 +40,14 @@
         background-image: url("./images/default-heros.jpg");
         background-size: cover;
         background-position: center;
+      }
+      .about {
+        background-color: rgba(255, 255, 255, 0.2);
+        filter: blur(10%);
+      }
+      body {
+        background-color: darkseagreen;
+        font-family: "Lato", serif;
       }
     </style>
   </head>
@@ -67,7 +79,7 @@
               </h5>
               <button
                 type="button"
-                class="btn-close btn-close-white shadow-none"
+                class="btn-close shadow-none"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -93,40 +105,16 @@
           </div>
         </div>
       </nav>
-
-      <!-- <ul
-        class="d-flex flex-column flex-sm-row align-items-center list-unstyled gap-4 p-3 mb-2 bg-success text-white z-100 opacity-75"
-      >
-        <li class="flex-grow-1"><strong>Nom du restaurant</strong></li>
-        <li>
-          <a href="#" class="text-decoration-none text-white fw-bold"
-            >Accueil</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none text-white fw-bold">Menu</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none text-white fw-bold"
-            >A propos de nous</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none text-white fw-bold"
-            >Contact</a
-          >
-        </li>
-      </ul> -->
     </header>
     <!-- Section Héros -->
-    <div id="heros-section" class="position-relative min-vh-100 w-100">
-      <div
-        class="position-absolute top-50 start-50 translate-middle text-center"
-      >
-        <h1>Des Plats Traditionnels, <br />Une Expérience Inoubliable</h1>
-        <button class="btn btn-outline-success">Commandez</button>
-      </div>
+    <div
+      id="heros-section"
+      class="vh-100 w-100 d-flex align-items-center justify-content-center flex-column text-center"
+    >
+      <h1>Des Plats Traditionnels, <br />Une Expérience Inoubliable</h1>
+      <button class="btn btn-outline-success">Commandez</button>
     </div>
+
     <!-- Modium 
     <div
       id="heros-section-m"
@@ -206,7 +194,7 @@
               <h5 class="card-title">Egusi Soup</h5>
               <p class="card-text">
                 Une soupe nigériane à base de graines de melon, d'épinards, de
-                viande ou de poisson, souvent servie avec du Fufu.
+                viande ou de poisson.
               </p>
               <strong href="#" class="text-danger fw-bolder"
                 >Prix : 10 €</strong
@@ -227,7 +215,7 @@
               <h5 class="card-title">Fufu</h5>
               <p class="card-text">
                 Le Fufu est une pâte épaisse faite à partir de manioc, d'igname
-                ou de plantain, souvent servie avec des soupes ou des ragoûts.
+                ou de plantain.
               </p>
               <strong href="#" class="text-danger fw-bolder">Prix : 8 €</strong>
             </div>
@@ -265,7 +253,7 @@
               <h5 class="card-title">Jollof Rice</h5>
               <p class="card-text">
                 Un plat ouest-africain de riz cuit dans une sauce tomate épicée
-                avec des légumes, souvent accompagné de viande ou de poisson.
+                avec des légumes.
               </p>
               <strong href="#" class="text-danger fw-bolder"
                 >Prix : 10 €</strong
@@ -307,13 +295,30 @@
               <h5 class="card-title">Tagine</h5>
               <p class="card-text">
                 Un ragoût marocain de viande, légumes et épices, cuit lentement
-                dans un plat en terre cuite.
+                dans un plat en terre.
               </p>
               <strong href="#" class="text-danger fw-bolder"
                 >Prix : 15 €</strong
               >
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section À propos de nous -->
+    <div class="w-75 z-90 container mt-4">
+      <div class="row about px-4 rounded-4">
+        <img src="./images/about.png" alt="" class="col-6" />
+        <div
+          class="col-6 d-flex align-items-center flex-column justify-content-center"
+        >
+          <h1>Apropos de nous</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis,
+            et id dolorem sunt debitis veniam libero esse, recusandae beatae
+            cumque iure minima, aliquid dignissimos. Suscipit, eaque. Iste,
+            excepturi praesentium!
+          </p>
         </div>
       </div>
     </div>
