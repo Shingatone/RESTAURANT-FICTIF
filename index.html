@@ -13,16 +13,27 @@
     <title>Document</title>
     <style>
       .card-text {
-        font-size: smaller;
-        column-gap: gray;
+        font-size: 10px;
+        color: gray;
         text-align: justify;
+        line-height: 1.3;
       }
       .card {
-        width: 300px;
-        height: 380px;
+        max-width: 300px;
+        height: 300px;
       }
       #heros-section {
         background-image: url("./images/d-heros.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      #heros-section-m {
+        background-image: url("./images/m-heros.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      #heros-section-sm {
+        background-image: url("./images/default-heros.jpg");
         background-size: cover;
         background-position: center;
       }
@@ -31,8 +42,60 @@
   <body>
     <!-- Section en-tête -->
     <header>
-      <ul
-        class="d-flex align-items-center list-unstyled gap-4 p-3 mb-2 bg-success text-white fixed-top z-100 opacity-75"
+      <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nom du restaurant</a>
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Nom du restaurant
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">A propos de nous</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <ul
+        class="d-flex flex-column flex-sm-row align-items-center list-unstyled gap-4 p-3 mb-2 bg-success text-white z-100 opacity-75"
       >
         <li class="flex-grow-1"><strong>Nom du restaurant</strong></li>
         <li>
@@ -53,21 +116,45 @@
             >Contact</a
           >
         </li>
-      </ul>
+      </ul> -->
     </header>
     <!-- Section Héros -->
     <div id="heros-section" class="position-relative min-vh-100 w-100">
       <div
         class="position-absolute top-50 start-50 translate-middle text-center"
       >
-        <h1>Bienvenu(e) chez papi cuisine</h1>
+        <h1>Des Plats Traditionnels, <br />Une Expérience Inoubliable</h1>
         <button class="btn btn-outline-success">Commandez</button>
       </div>
     </div>
+    <!-- Modium 
+    <div
+      id="heros-section-m"
+      class="d-none d-sm-block position-relative min-vh-100 w-100"
+    >
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center"
+      >
+        <p>Des Plats Traditionnels, <br />Une Expérience Inoubliable</p>
+        <button class="btn btn-outline-success">Commandez</button>
+      </div>
+    </div> -->
+    <!-- small 
+    <div
+      id="heros-section-sm"
+      class="d-block d-sm-none position-relative min-vh-100 w-100"
+    >
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center"
+      >
+        <h6>Des Plats Traditionnels, <br />Une Expérience Inoubliable</h6>
+        <button class="btn btn-outline-success">Commandez</button>
+      </div>
+    </div> -->
     <!-- Section Menu -->
     <div class="container px-8">
       <div class="row">
-        <div class="col-3 mt-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
           <div class="card">
             <img
               src="./images/Bobotie.jpg"
@@ -88,7 +175,7 @@
           </div>
         </div>
 
-        <div class="col-3 mt-4 h-">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div class="card">
             <img
               src="./images/Bunny Chow.jpg"
@@ -107,7 +194,7 @@
           </div>
         </div>
 
-        <div class="col-3 mt-4 h-">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div class="card">
             <img
               src="./images/Egusi Soup.jpg"
@@ -128,7 +215,7 @@
           </div>
         </div>
 
-        <div class="col-3 mt-4 h-">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div class="card">
             <img
               src="./images/Fufu.jpg"
@@ -147,7 +234,7 @@
           </div>
         </div>
 
-        <div class="col-3 mt-4 h-">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div class="card">
             <img
               src="./images/Injera.jpg"
@@ -166,7 +253,7 @@
           </div>
         </div>
 
-        <div class="col-3 mt-4 h-">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div class="card">
             <img
               src="./images/Jollof Rice.jpg"
@@ -187,7 +274,7 @@
           </div>
         </div>
 
-        <div class="col-3 mt-4 h-">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div class="card">
             <img
               src="./images/Poulet Yassa.jpg"
@@ -208,7 +295,7 @@
           </div>
         </div>
 
-        <div class="col-3 mt-4 h-">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div class="card">
             <img
               src="./images/Tagine.jpg"
