@@ -16,18 +16,45 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "bohemian";
+  src: url("fonts/bohemian_soul/Bohemian\ Soul.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 @media (max-width: 575.98px) {
-  #heros-section-sm {
-    background-image: url("./images/default-heros.jpg");
+  #heros-section {
+    background-image: url("./images/xs-heros.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh !important;
+  }
+  .title {
+    font-size: 15px;
+  }
+}
+@media (min-width: 575.98px) {
+  #heros-section {
+    background-image: url("./images/sm-heros.jpg");
     background-size: cover;
     background-position: center;
   }
 }
-@media (max-width: 1199.98px) {
+@media (min-width: 992px) {
+  #heros-section {
+    background-image: url("./images/m-heros.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1200px) {
   #heros-section {
     background-image: url("./images/d-heros.jpg");
     background-size: cover;
     background-position: center;
+  }
+  .title {
+    font-size: 50px;
   }
 }
 .navbar {
@@ -48,6 +75,7 @@
 .about {
   background-color: rgba(255, 255, 255, 0.2);
   filter: blur(10%);
+  border: 1px solid white;
 }
 body {
   background-color: #9cdcce;

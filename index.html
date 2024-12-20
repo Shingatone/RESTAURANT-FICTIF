@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>RESTAURANT</title>
   </head>
   <body>
     <!-- Section en-tête -->
@@ -63,13 +63,13 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Menu</a>
+                  <a class="nav-link" href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">A propos de nous</a>
+                  <a class="nav-link" href="#about">A propos de nous</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -83,17 +83,19 @@
       class="vh-100 w-100 d-flex align-items-center justify-content-center flex-column text-center"
     >
       <h1
-        class="text-success"
-        style="font-family: Adorabelle; font-weight: bold; font-size: 80px"
+        class="title text-dark"
+        style="font-family: bohemian; font-weight: bold"
       >
-        Des Plats Traditionnels, <br />Une Expérience Inoubliable
+        Des Plats Traditionnels, <br />Une Expérience
+        <span style="color: green">Inoubliable</span>
       </h1>
-      <button class="btn btn-outline-success">Commandez</button>
+      <button class="btn btn-outline-success mt-4 px-4 py-2">Commandez</button>
     </div>
 
     <!-- Section Menu -->
-    <div class="container px-8">
-      <div class="row">
+    <div class="container text-center mt-5 bg-secondary py-4 rounded px-4">
+      <h3 style="font-family: AcuminProBold; color: white">MENU</h3>
+      <div class="row" id="menu">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
           <div class="card">
             <img
@@ -226,7 +228,7 @@
               <h5 class="card-title">Poulet Yassa</h5>
               <p class="card-text">
                 Un plat sénégalais de poulet mariné au citron, aux oignons et
-                aux épices, puis grillé et mijoté.
+                aux épices.
               </p>
               <strong href="#" class="text-danger fw-bolder"
                 >Prix : 12 €</strong
@@ -246,8 +248,7 @@
             <div class="card-body">
               <h5 class="card-title">Tagine</h5>
               <p class="card-text">
-                Un ragoût marocain de viande, légumes et épices, cuit lentement
-                dans un plat en terre.
+                Un ragoût marocain de viande, légumes et épices.
               </p>
               <strong href="#" class="text-danger fw-bolder"
                 >Prix : 15 €</strong
@@ -258,13 +259,13 @@
       </div>
     </div>
     <!-- Section À propos de nous -->
-    <div class="w-75 z-90 container mt-4">
+    <div class="w-75 z-90 container mt-4" id="about">
       <div class="row about px-4 rounded-4">
         <img src="./images/about.png" alt="" class="col-md-12 col-lg-6 my-2" />
         <div
-          class="col-md-12 col-lg-6 d-flex align-items-center flex-column justify-content-evenly"
+          class="col-md-12 col-lg-6 d-flex align-items-center flex-column justify-content-evenly mb-4"
         >
-          <h3 style="font-family: 'AcuminProBold'">Apropos de nous</h3>
+          <h3 style="font-family: AcuminProBold">Apropos de nous</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis,
             et id dolorem sunt debitis veniam libero esse, recusandae beatae
@@ -276,14 +277,17 @@
       </div>
     </div>
     <!-- Section form -->
-    <form class="container w-50 bg-secondary my-4 p-4 rounded">
+    <form
+      class="container w-50 bg-secondary my-4 p-4 rounded text-white"
+      id="contact"
+    >
       <h4 class="text-center" style="font-family: 'AcuminProBold'">
         Nous contactez
       </h4>
       <div class="mb-1">
         <label for="name" class="form-label mb-1">Full Name</label>
         <input
-          class="form-control shadow-none"
+          class="form-control px-2 py-1 shadow-none"
           id="name"
           type="text"
           aria-label="default input example"
@@ -295,7 +299,7 @@
         >
         <input
           type="email"
-          class="form-control shadow-none"
+          class="form-control px-2 py-1 shadow-none"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
         />
@@ -306,12 +310,12 @@
           >Example textarea</label
         >
         <textarea
-          class="form-control shadow-none"
+          class="form-control px-2 py-1 shadow-none"
           id="exampleFormControlTextarea1"
           rows="3"
         ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary w-100">Submit</button>
+      <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
     </form>
     <!-- Seection footer -->
     <footer
@@ -320,22 +324,38 @@
       <h5 class="text-uppercase my-4 pb-4 border-bottom border-secondary">
         Mon Restaurant
       </h5>
-      <div class="w-100 d-flex align-items-center mb-md-0">
+      <div
+        class="w-100 d-flex flex-column flex-sm-row align-items-center mb-md-0"
+      >
         <p class="text-start m-0 flex-grow-1">
           Copyright &copy; 2024. Tous droits réservés.
         </p>
-        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
+        <div>
+          <a
+            href="#"
+            class="btn btn-outline-light btn-floating m-1"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            class="btn btn-outline-light btn-floating m-1"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="btn btn-outline-light btn-floating m-1"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="#"
+            class="btn btn-outline-light btn-floating m-1"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
       </div>
     </footer>
   </body>
