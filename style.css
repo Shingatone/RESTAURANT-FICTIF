@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "AcuminProBold";
+  src: url("fonts/acumin-pro-cufonfonts/Acumin-BdPro.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AcuminPro";
+  src: url("fonts/acumin-pro-cufonfonts/Acumin-RPro.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Adorabelle";
+  src: url("fonts/adorabelle-font/AdorabelleFreePersonalUseRg-rgBXO.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@media (max-width: 575.98px) {
+  #heros-section-sm {
+    background-image: url("./images/default-heros.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 1199.98px) {
+  #heros-section {
+    background-image: url("./images/d-heros.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+.navbar {
+  background-color: #d9edf0;
+
+  font-weight: bold;
+}
+.card-text {
+  font-size: 13px;
+  color: gray;
+  text-align: justify;
+  line-height: 1.3;
+}
+.card {
+  max-width: 300px;
+}
+
+.about {
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(10%);
+}
+body {
+  background-color: #9cdcce;
+  font-family: "AcuminPro", serif;
+}
