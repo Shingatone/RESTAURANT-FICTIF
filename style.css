@@ -38,6 +38,7 @@
     background-image: url("./images/sm-heros.jpg");
     background-size: cover;
     background-position: center;
+    height: 70vh !important;
   }
 }
 @media (min-width: 992px) {
@@ -45,6 +46,7 @@
     background-image: url("./images/m-heros.jpg");
     background-size: cover;
     background-position: center;
+    height: 100vh !important;
   }
 }
 @media (min-width: 1200px) {
@@ -59,9 +61,9 @@
 }
 .navbar {
   background-color: #d9edf0;
-
   font-weight: bold;
 }
+
 .card-text {
   font-size: 13px;
   color: gray;
@@ -71,13 +73,24 @@
 .card {
   max-width: 300px;
 }
-
-.about {
-  background-color: rgba(255, 255, 255, 0.2);
-  filter: blur(10%);
+.card-title {
+  font-family: AcuminProBold;
+  font-size: x-large;
+}
+#about,
+#menu-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  filter: blur(100%);
   border: 1px solid white;
 }
 body {
   background-color: #9cdcce;
   font-family: "AcuminPro", serif;
+}
+.card-p {
+  font-size: small;
+  color: grey;
+}
+span {
+  color: green;
 }
