@@ -60,7 +60,6 @@
   }
 }
 .navbar {
-  background-color: #d9edf0;
   font-weight: bold;
 }
 
@@ -76,6 +75,9 @@
 .card-title {
   font-family: AcuminProBold;
   font-size: x-large;
+}
+.btn_buy {
+  font-size: small;
 }
 #about,
 #menu-container {
@@ -93,4 +95,7 @@ body {
 }
 span {
   color: green;
+}
+footer {
+  background-color: #282932;
 }

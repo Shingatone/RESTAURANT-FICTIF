@@ -27,7 +27,7 @@
     <header>
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Nom du restaurant</a>
+          <a class="navbar-brand text-white" href="#">Nom du restaurant</a>
           <button
             class="navbar-toggler shadow-none border-0"
             type="button"
@@ -58,18 +58,23 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
                     >Accueil</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#menu">Menu</a>
+                  <a class="nav-link text-white" href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">A propos de nous</a>
+                  <a class="nav-link text-white" href="#about"
+                    >A propos de nous</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link text-white" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -82,198 +87,254 @@
       id="heros-section"
       class="vh-100 w-100 d-flex align-items-center justify-content-center flex-column text-center"
     >
-      <h1
-        class="title text-dark"
-        style="font-family: bohemian; font-weight: bold"
-      >
-        Des Plats Traditionnels, <br />Une Expérience
-        <span style="color: green">Inoubliable</span>
-      </h1>
-      <button class="btn btn-outline-success mt-4 px-4 py-2">Commandez</button>
+      <div style="background-color: transparent; backdrop-filter: blur(20px)">
+        <h1
+          class="title text-dark"
+          style="font-family: bohemian; font-weight: bold"
+        >
+          Des Plats Traditionnels, <br />Une Expérience
+          <span style="color: green">Inoubliable</span>
+        </h1>
+        <button class="btn btn-outline-success mt-4 px-4 py-2">
+          Commandez
+        </button>
+      </div>
     </div>
 
     <!-- Section Menu -->
-    <div
-      class="container text-center mt-5 py-4 rounded px-4"
-      id="menu-container"
-    >
-      <h3 style="font-family: AcuminProBold; font-size: 50px; font-weight: 900">
-        Notre <span>Menu</span>
-      </h3>
+    <div class="container mt-5 py-4 rounded px-4" id="menu-container">
+      <div class="w-100 d-flex flex-column align-items-center">
+        <h3
+          style="font-family: AcuminProBold; font-size: 50px; font-weight: 900"
+        >
+          Notre <span>Menu</span>
+        </h3>
+        <p class="w-50 text-center">
+          Nous sommes une entreprise spécialisée dans le domaine des services
+          alimentaires avec une très large gamme à travers toute l'Afrique.
+        </p>
+      </div>
+
       <div class="row" id="menu">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Bobotie.jpg"
               class="rounded-circle border border-5 border-success"
               alt="..."
-              style="width: 200px; height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Bobotie</h5>
               <p class="card-p">
                 Un plat sud-africain à base de viande hachée épicée, de fruits
                 secs.
               </p>
-              <strong href="#" class="text-danger fw-bolder"
-                >Prix : 12 €</strong
-              >
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Bunny Chow.jpg"
               class="rounded-circle border border-5 border-success"
               alt="..."
-              style="max-width: 200px; max-height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Bunny Chow</h5>
               <p class="card-p">
                 Un plat sud-africain composé d'un pain évidé rempli de curry
                 épicé.
               </p>
-              <strong href="#" class="text-danger fw-bolder">Prix : 7 €</strong>
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Egusi Soup.jpg"
               class="rounded-circle border border-5 border-success"
               alt="..."
-              style="width: 200px; height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Egusi Soup</h5>
               <p class="card-p">
                 Une soupe nigériane à base de graines de melon, d'épinards, de
                 viande ou de poisson.
               </p>
-              <strong href="#" class="text-danger fw-bolder"
-                >Prix : 10 €</strong
-              >
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Fufu.jpg"
               class="rounded-circle border border-5 border-success"
               alt="..."
-              style="width: 200px; height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Fufu</h5>
               <p class="card-p">
                 Le Fufu est une pâte épaisse faite à partir de manioc, d'igname
                 ou de plantain.
               </p>
-              <strong href="#" class="text-danger fw-bolder">Prix : 8 €</strong>
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Injera.jpg"
               class="rounded-circle border border-5 border-success"
               alt="..."
-              style="max-width: 200px; max-height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Injera</h5>
               <p class="card-p">
                 Une galette éthiopienne à base de teff, souvent servie avec
                 divers ragoûts.
               </p>
-              <strong href="#" class="text-danger fw-bolder">Prix : 5 €</strong>
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Jollof Rice.jpg"
               class="rounded-circle border border-5 border-success"
               alt="..."
-              style="width: 200px; height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Jollof Rice</h5>
               <p class="card-p">
                 Un plat ouest-africain de riz cuit dans une sauce tomate épicée
                 avec des légumes.
               </p>
-              <strong href="#" class="text-danger fw-bolder"
-                >Prix : 10 €</strong
-              >
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Poulet Yassa.jpg"
               class="rounded-circle border border-5 border-success border-md"
               alt="..."
-              style="width: 200px; height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Poulet Yassa</h5>
               <p class="card-p">
                 Un plat sénégalais de poulet mariné au citron, aux oignons et
                 aux épices.
               </p>
-              <strong href="#" class="text-danger fw-bolder"
-                >Prix : 12 €</strong
-              >
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-4"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
           >
             <img
               src="./images/Tagine.jpg"
               class="rounded-circle border border-5 border-success"
               alt="..."
-              style="width: 200px; height: 200px"
+              style="width: 75%; height: 75%"
             />
-            <div class="card-body">
+            <div class="card-body pb-0">
               <h5 class="card-title">Tagine</h5>
               <p class="card-p">
                 Un ragoût marocain de viande, légumes et épices.
               </p>
-              <strong href="#" class="text-danger fw-bolder"
-                >Prix : 15 €</strong
-              >
+              <div class="d-flex align-items-center">
+                <strong href="#" class="flex-grow-1 text-danger fw-bolder"
+                  >Prix : 7 €</strong
+                >
+                <button type="button" class="btn_buy btn btn-success px-2 py-1">
+                  Buy now
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -282,9 +343,9 @@
     <!-- Section À propos de nous -->
     <div class="w-75 z-90 container mt-4 rounded-4" id="about">
       <div class="row abou t px-4 rounded-4">
-        <img src="./images/about.png" alt="" class="col-md-12 col-lg-6 my-2" />
+        <img src="./images/about.png" alt="" class="col-md-12 col-lg-6 my-4" />
         <div
-          class="col-md-12 col-lg-6 d-flex align-items-center flex-column justify-content-evenly mb-4"
+          class="col-md-12 col-lg-6 d-flex flex-column justify-content-evenly"
         >
           <h3
             style="
@@ -297,11 +358,15 @@
           </h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis,
-            et id dolorem sunt debitis veniam libero esse, recusandae beatae
-            cumque iure minima, aliquid dignissimos. Suscipit, eaque. Iste,
-            excepturi praesentium!
+            et id dolorem sunt debitis veniam libero esse,
+            <br /><br />
+            recusandae beatae cumque iure minima,
+            <br /><br />
+            aliquid dignissimos. Suscipit, eaque. Iste, excepturi praesentium!
           </p>
-          <button class="btn btn-outline-success">Commandez</button>
+          <button type="button" class="btn btn-success w-25 mb-4 mb-lg-0">
+            Read more
+          </button>
         </div>
       </div>
     </div>
@@ -344,12 +409,10 @@
           rows="3"
         ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
+      <button type="submit" class="btn btn-success w-100 mt-4">Submit</button>
     </form>
     <!-- Seection footer -->
-    <footer
-      class="w-100 d-flex flex-column bg-dark text-center text-white px-4 py-2"
-    >
+    <footer class="w-100 d-flex flex-column text-center text-white px-4 py-2">
       <h5 class="text-uppercase my-4 pb-4 border-bottom border-secondary">
         Mon Restaurant
       </h5>
