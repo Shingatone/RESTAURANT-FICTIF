@@ -20,14 +20,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>RESTAURANT</title>
+    <title>Délices Africains</title>
   </head>
   <body>
     <!-- Section en-tête -->
     <header>
-      <nav class="navbar navbar-expand-md fixed-top">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Nom du restaurant</a>
+          <a class="navbar-brand text-white" href="#">Délices Africains</a>
           <button
             class="navbar-toggler shadow-none border-0"
             type="button"
@@ -39,18 +39,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="offcanvas offcanvas-end"
+            class="offcanvas offcanvas-end text-bg-dark"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header border-bottom">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Nom du restaurant
+                Délices Africains
               </h5>
               <button
                 type="button"
-                class="btn-close shadow-none"
+                class="btn-close btn-close-white shadow-none"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -87,38 +87,38 @@
       id="heros-section"
       class="vh-100 w-100 d-flex align-items-center justify-content-center flex-column text-center"
     >
-      <div style="background-color: transparent; backdrop-filter: blur(20px)">
+      <div
+        style="background-color: transparent; backdrop-filter: blur(20px)"
+        class="d-flex flex-column align-items-center py-2 px-4 rounded-5 border"
+      >
         <h1
-          class="title text-dark"
+          class="heros_title lh-base text-white"
           style="font-family: bohemian; font-weight: bold"
         >
           Des Plats Traditionnels, <br />Une Expérience
           <span style="color: green">Inoubliable</span>
         </h1>
-        <button class="btn btn-outline-success mt-4 px-4 py-2">
-          Commandez
-        </button>
+        <button class="heros_btn btn btn-success mt-2 py-1">Commandez</button>
       </div>
     </div>
-
     <!-- Section Menu -->
-    <div class="container mt-5 py-4 rounded px-4" id="menu-container">
+    <div class="container mt-5 py-4 rounded px-4" id="menu">
       <div class="w-100 d-flex flex-column align-items-center">
         <h3
           style="font-family: AcuminProBold; font-size: 50px; font-weight: 900"
         >
-          Notre <span>Menu</span>
+          Our <span>Menu</span>
         </h3>
-        <p class="w-50 text-center">
+        <p class="menu_p text-center">
           Nous sommes une entreprise spécialisée dans le domaine des services
           alimentaires avec une très large gamme à travers toute l'Afrique.
         </p>
       </div>
 
-      <div class="row" id="menu">
+      <div class="row justify-content-center">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
               src="./images/Bobotie.jpg"
@@ -130,7 +130,7 @@
               <h5 class="card-title">Bobotie</h5>
               <p class="card-p">
                 Un plat sud-africain à base de viande hachée épicée, de fruits
-                secs.
+                secs et d'une garniture d'œufs.
               </p>
               <div class="d-flex align-items-center">
                 <strong href="#" class="flex-grow-1 text-danger fw-bolder"
@@ -146,7 +146,7 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
               src="./images/Bunny Chow.jpg"
@@ -174,7 +174,7 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
               src="./images/Egusi Soup.jpg"
@@ -202,7 +202,7 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
               src="./images/Fufu.jpg"
@@ -230,7 +230,7 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
               src="./images/Injera.jpg"
@@ -258,7 +258,7 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
               src="./images/Jollof Rice.jpg"
@@ -286,11 +286,11 @@
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
-              src="./images/Poulet Yassa.jpg"
-              class="rounded-circle border border-5 border-success border-md"
+              src="./images/Tagine.jpg"
+              class="rounded-circle border border-5 border-success"
               alt="..."
               style="width: 75%; height: 75%"
             />
@@ -311,10 +311,9 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 h-">
           <div
-            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2"
+            class="card d-flex flex-column justify-content-center align-items-center py-2 rounded-2 shadow"
           >
             <img
               src="./images/Tagine.jpg"
@@ -339,11 +338,20 @@
           </div>
         </div>
       </div>
+      <div class="d-flex justify-content-center w-100">
+        <button type="button" class="col-12 about_btn btn btn-success mt-4">
+          more menu
+        </button>
+      </div>
     </div>
     <!-- Section À propos de nous -->
-    <div class="w-75 z-90 container mt-4 rounded-4" id="about">
-      <div class="row abou t px-4 rounded-4">
-        <img src="./images/about.png" alt="" class="col-md-12 col-lg-6 my-4" />
+    <div class="w-100 z-90 container mt-4 rounded-4" id="about">
+      <div class="row px-4 rounded-4">
+        <img
+          src="./images/about.png"
+          alt=""
+          class="col-md-12 col-lg-6 my-4 bg-dark p-4"
+        />
         <div
           class="col-md-12 col-lg-6 d-flex flex-column justify-content-evenly"
         >
@@ -364,7 +372,7 @@
             <br /><br />
             aliquid dignissimos. Suscipit, eaque. Iste, excepturi praesentium!
           </p>
-          <button type="button" class="btn btn-success w-25 mb-4 mb-lg-0">
+          <button type="button" class="about_btn btn btn-success mb-4 mb-lg-0">
             Read more
           </button>
         </div>
@@ -372,12 +380,21 @@
     </div>
     <!-- Section form -->
     <form
-      class="container w-50 bg-secondary my-4 p-4 rounded text-white"
+      class="container my-4 p-4 rounded text-white"
       id="contact"
+      style="background-color: dimgray"
     >
-      <h4 class="text-center" style="font-family: 'AcuminProBold'">
-        Nous contactez
-      </h4>
+      <h3
+        style="
+          font-family: AcuminProBold;
+          font-size: 48px;
+          font-weight: 900;
+          color: #212529;
+          text-align: center;
+        "
+      >
+        Contact <span>Us</span>
+      </h3>
       <div class="mb-1">
         <label for="name" class="form-label mb-1">Full Name</label>
         <input
@@ -414,7 +431,7 @@
     <!-- Seection footer -->
     <footer class="w-100 d-flex flex-column text-center text-white px-4 py-2">
       <h5 class="text-uppercase my-4 pb-4 border-bottom border-secondary">
-        Mon Restaurant
+        Délices Africains
       </h5>
       <div
         class="w-100 d-flex flex-column flex-sm-row align-items-center mb-md-0"

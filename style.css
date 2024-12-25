@@ -27,10 +27,24 @@
     background-image: url("./images/xs-heros.jpg");
     background-size: cover;
     background-position: center;
-    height: 40vh !important;
+    height: 60vh !important;
   }
-  .title {
+  .heros_title {
     font-size: 15px;
+  }
+  .heros_btn {
+    font-size: 12px;
+  }
+  .menu_p {
+    width: 100%;
+  }
+  form {
+    width: 90% !important;
+    font-size: 14px;
+  }
+  .about_btn {
+    font-size: 14px;
+    width: 100px;
   }
 }
 @media (min-width: 575.98px) {
@@ -38,15 +52,31 @@
     background-image: url("./images/sm-heros.jpg");
     background-size: cover;
     background-position: center;
-    height: 70vh !important;
+    height: 100vh !important;
+  }
+  .heros_title {
+    font-size: 28px;
+  }
+  .menu_p {
+    width: 50%;
+  }
+  .about_btn {
+    font-size: 14px;
+    width: 100px;
+  }
+  form {
+    width: 70% !important;
   }
 }
 @media (min-width: 992px) {
   #heros-section {
-    background-image: url("./images/m-heros.jpg");
+    background-image: url("./images/md-heros.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh !important;
+  }
+  form {
+    width: 50% !important;
   }
 }
 @media (min-width: 1200px) {
@@ -55,43 +85,39 @@
     background-size: cover;
     background-position: center;
   }
-  .title {
-    font-size: 50px;
-  }
 }
 .navbar {
-  font-weight: bold;
+  font-weight: 400;
+  background-color: #1b222c;
 }
 
-.card-text {
-  font-size: 13px;
+.card-p {
+  font-size: 10px !important;
   color: gray;
-  text-align: justify;
+  height: 3rem !important;
+  margin-bottom: 5px;
+  width: 100%;
+
   line-height: 1.3;
 }
 .card {
   max-width: 300px;
 }
 .card-title {
-  font-family: AcuminProBold;
-  font-size: x-large;
+  font-family: AcuminPro;
+  font-weight: 600;
+  font-size: large;
 }
 .btn_buy {
   font-size: small;
 }
-#about,
-#menu-container {
-  background-color: rgba(255, 255, 255, 0.1);
-  filter: blur(100%);
-  border: 1px solid white;
-}
+
 body {
-  background-color: #9cdcce;
   font-family: "AcuminPro", serif;
+  min-width: 300px;
 }
-.card-p {
-  font-size: small;
-  color: grey;
+.navbar {
+  min-width: 300px;
 }
 span {
   color: green;
